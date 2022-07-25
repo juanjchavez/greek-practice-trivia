@@ -1,0 +1,88 @@
+#greek-vocabullary-app{
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+    .word{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 50px;
+    }
+    .options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+        a{
+            text-decoration: none;
+            display: block;
+            background-color: #276fb6;
+            color:#f2f2f2;
+            padding: 11px 20px;
+            border-radius: 8px;
+            text-align: center;
+            &:hover{
+                background-color: #215b95;
+            }
+            &.disabled{
+                background-color: #555;
+            }
+            &.fail{
+                text-decoration: line-through;
+                background-color: #b63127;
+            }
+            &.success{
+                background-color:#27b646;
+            }
+        }
+    }
+    .total{
+        margin-top: 20px;
+    }
+    .results{
+        font-size: 16px;
+        text-align: center;
+        .score{
+            padding-top: 10px;
+            display: block;
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+    .table-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        table.errors-table{
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            font-size: 18px;
+            thead{
+                background-color: #276fb6;
+                color: #f2f2f2;
+            }
+            td{
+                border: 1px solid rgb(190, 190, 190);
+                padding: 5px 10px;
+            }
+        }
+    }
+    .restart-wrapper{
+        margin-top: 15px;
+        a{
+            text-decoration: none;
+            display: block;
+            background-color: #276fb6;
+            color:#f2f2f2;
+            padding: 11px 20px;
+            border-radius: 8px;
+            text-align: center;
+            &:hover{
+                background-color: #215b95;
+            }
+        }
+    }
+}
